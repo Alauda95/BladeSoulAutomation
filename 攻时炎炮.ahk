@@ -181,6 +181,7 @@ Loop
     liuxing_ready := checkAndStart(liuxing_ready, "v", checkLiuxing)
     ; checkAndStart(huoyan_ready, "x", checkHuoyan, true)
     ; checkAndStart(xinghuo_ready, "z", checkXinghuo, true)
+    ; todo 识别火F和冰F再释放，切当火玉3（识别大小3层）层时不释放火F，冰F同理
     SendInput "tf"
     ; Sleep latency * 2
     ; checkAndStart(hanfeng_ready, "X", checkHanfeng, true)
