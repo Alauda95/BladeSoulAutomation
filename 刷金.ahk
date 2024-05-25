@@ -36,8 +36,8 @@ Loop
     Sleep press2
     SendInput "{2 up}"
     Sleep release2
-    pressLeft := Random(0.0, 0.2) * 1000
-    releaseLeft := Random(0.0, 0.2) * 1000
+    pressLeft := Random(0.4, 0.8) * 1000
+    releaseLeft := Random(0.4, 0.8) * 1000
     SendInput "{Left down}"
     Sleep pressLeft
     SendInput "{Left up}"
