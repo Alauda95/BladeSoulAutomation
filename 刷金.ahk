@@ -14,8 +14,18 @@ F12::
 return
 
 
+turrnAround(){
+    pressLeft := Random(0.4, 0.8) * 1000
+    releaseLeft := Random(0.4, 0.8) * 1000
+    SendInput "{Left down}"
+    Sleep pressLeft
+    SendInput "{Left up}"
+    Sleep releaseLeft
+}
+
 F5::
 {   
+    SetTimer turrnAround, 1
 Loop
 {   
     pressR := Random(0.0, 0.2) * 1000
@@ -36,13 +46,8 @@ Loop
     Sleep press2
     SendInput "{2 up}"
     Sleep release2
-    pressLeft := Random(0.4, 0.8) * 1000
-    releaseLeft := Random(0.4, 0.8) * 1000
-    SendInput "{Left down}"
-    Sleep pressLeft
-    SendInput "{Left up}"
-    Sleep releaseLeft
 }Until GetKeyState("F6", "P")
+    SetTimer turrnAround, 0
 }
 
 GetColor(x, y) {
