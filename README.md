@@ -1,2 +1,2 @@
 # BladeSoulAutomation
-剑灵AHK2.0自动化代码
+剑灵怀旧服AHK2.0自动化代码
