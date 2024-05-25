@@ -19,7 +19,7 @@ F9::
 Loop
 {   
     Click 2
-    SendInput "f"
+    SendInput "y"
     Sleep 1
 }Until GetKeyState("F10", "P")
 }
