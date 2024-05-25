@@ -90,12 +90,14 @@ fightAndChangeChannel(num) {
 
 F5::
 {  
-    channel := 6 
+    startChannel := 6
+    endChannel := 8
+    channel := startChannel
     loop {
         channel := channel + 1
         fightAndChangeChannel(channel)
-        if channel == 8 {
-            channel := 6
+        if channel == endChannel {
+            channel := startChannel - 1
         }
     } until GetKeyState("F6", "P")
 }
