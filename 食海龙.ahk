@@ -77,6 +77,7 @@ checkIfSuccess() {
 fightAndChangeChannel(num) {
     SendInput "rt2"
     sleep 200
+    ; 拾取物品和抱猪的F图标不一样，识别拾取物品图标，杜绝抱猪
     if CheckImage([1870, 740], [2494, 1392], "img\食海龙\拾取物品.png") {
         SendInput "f"
         Sleep 300
